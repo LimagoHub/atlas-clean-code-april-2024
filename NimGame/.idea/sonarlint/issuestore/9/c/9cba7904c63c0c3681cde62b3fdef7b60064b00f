@@ -1,0 +1,4 @@
+
+	cpp:S5945-"=Use "std::array" or "std::vector" instead of a C-style array.(ã­«¦8¿öÄìë1J$0973ce87-e4cb-47a7-b4e3-df7d6634f3c2
+¶	cpp:S3230"oDo not use the constructor's initializer list for data member "gameover". Use the in-class initializer instead.(‡£è‘úÿÿÿÿ8ü˜‹ìë1J$afb59bd4-f072-47da-9250-32391c68728c
+´	cpp:S3230"mDo not use the constructor's initializer list for data member "stones". Use the in-class initializer instead.(‡£è‘úÿÿÿÿ8ÞÀ‡ìë1J$f2b5aaa7-66a1-489f-9e22-bc76e7c3c4b5

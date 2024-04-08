@@ -1,3 +1,5 @@
 
-s
-java:S1128"+Remove this unused import 'java.awt.event'.(Ã®ÎÙÿÿÿÿÿ8³îÌ½³1J$250d92e8-0e18-4fc9-8b49-9531428f5cdc
+L	java:S106"+Replace this use of System.out by a logger.(Š–¸Ôúÿÿÿÿ8û®Éçë1
+X	java:S125"<This block of commented-out lines of code should be removed.(ÆÛ¤„8ý®Éçë1
+M
+java:S1128"+Remove this unused import 'java.awt.event'.(Ã®ÎÙÿÿÿÿÿ8þ®Éçë1
