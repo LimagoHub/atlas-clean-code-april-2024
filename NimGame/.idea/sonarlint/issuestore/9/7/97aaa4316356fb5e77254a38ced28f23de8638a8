@@ -1,0 +1,8 @@
+
+v	cpp:S1135"4Complete the task associated to this "TODO" comment.(Ö‡¯Ô8üÂì1J$884e1d69-df66-42e5-b588-20996ad810ae
+|	cpp:S1117P":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(ûÙÇ8Éª‘‘ì1J$06261a53-e529-499b-8481-20e36e9db312
+{	cpp:S1117Z":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(¥È»u8ŒÜì1J$e2b07356-631e-46cc-8739-9875e01c77bd
+	cpp:S1117b":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(Ñ†ÒÖûÿÿÿÿ8ŒÜì1J$a5140c42-2396-4ffe-9e08-e377ab178155
+p	cpp:S5817")This function should be declared "const".(â¾Ï¯ıÿÿÿÿ8áé¥‘ì1J$43f88722-74a6-4de5-a5aa-04d2bc305ef1
+Ÿ	cpp:S1172"XRemove the unused parameter "player", make it unnamed, or declare it "[[maybe_unused]]".(â¾Ï¯ıÿÿÿÿ8ÅıÂì1J$6aa4ca32-0345-4477-9a0c-64baf7da16ac
+…	cpp:S1238m">Pass expensive to copy object "message" by reference to const.(ƒíÌ±üÿÿÿÿ8À¡ùì1J$0958b7c9-1ff6-4713-8625-0cb76dac2d27

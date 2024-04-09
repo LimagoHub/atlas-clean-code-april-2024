@@ -3,78 +3,39 @@
 //
 
 #pragma once
-#include <iostream>
+#include <vector>
 
-#include "../Game.h"
+#include "../AbstractGame.h"
+
+#include "../../io/Writer.h"
 
 namespace atlas::games {
-    class NimGame :public Game{
+    class NimGame :public AbstractGame<int,int>{
+
+
+
     public:
-        NimGame():stones(23) {}
+        explicit NimGame(io::Writer &writer) : AbstractGame(writer) {
+            setBoard(23);
+        }
+
         ~NimGame() override = default;
 
-        void play() override {
-            while(! isGameOver()) {
-                playRounds();
-            }
+    protected:
+        bool isGameOver()  const override{
+            return getBoard() < 1 || getPlayers().empty();
         }
 
+        void updateScene() override{ setBoard(getBoard() - getMove()) ;}
 
-    private:
-        int stones;
-        int move;
 
-        void playRounds() {
-            spielerzug();
-            computerzug();
 
+        bool isTurnValid() const override{
+            return getMove() >= 1 && getMove() <= 3;
         }
 
-
-        void spielerzug() {
-
-            if(isGameOver()) return;
-
-            int move;
-            while(true) {
-                std::cout << "Es gibt " << stones << " Steine. Bitte nehmen Sie 1,2 oder 3" <<std::endl;
-                std::cin >> move;
-                if(move >=1 && move <=3) break;
-                std::cout << "ungueltiger Zug!" << std::endl;
-            }
-            terminateTurn("Human");
-        }
-
-        void computerzug() {
-
-            if(isGameOver()) return;
-
-            constexpr int zuege[] = {3,1,1,2};
-
-
-            move = zuege[stones % 4];
-            std::cout << "Computer nimmt " << move << " Steine." << std::endl;
-
-            terminateTurn("Computer");
-
-        }
-
-        void terminateTurn( std::string player) {// Integration
-            updateScene();
-            printGameOvermessageIfGameIsOver(player);
-        }
-
-        void printGameOvermessageIfGameIsOver(const std::string &player) { // Operation
-
-            if(isGameOver()){
-                std::cout << player << " hat verloren" << std::endl;
-            }
-        }
-
-        void updateScene() { stones -= move; }
-
-        bool isGameOver() {
-            return stones < 1;
+        void prepare() const override {
+            write(getCurrentPlayer()->getName() + " ist am Zug.");
         }
     };
 
