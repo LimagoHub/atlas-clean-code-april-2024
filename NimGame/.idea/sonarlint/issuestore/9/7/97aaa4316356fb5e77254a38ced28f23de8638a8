@@ -1,8 +1,7 @@
 
-v	cpp:S1135"4Complete the task associated to this "TODO" comment.(Ö‡¯Ô8üÂì1J$884e1d69-df66-42e5-b588-20996ad810ae
-|	cpp:S1117P":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(ûÙÇ8Éª‘‘ì1J$06261a53-e529-499b-8481-20e36e9db312
-{	cpp:S1117Z":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(¥È»u8ŒÜì1J$e2b07356-631e-46cc-8739-9875e01c77bd
-	cpp:S1117b":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(Ñ†ÒÖûÿÿÿÿ8ŒÜì1J$a5140c42-2396-4ffe-9e08-e377ab178155
-p	cpp:S5817")This function should be declared "const".(â¾Ï¯ıÿÿÿÿ8áé¥‘ì1J$43f88722-74a6-4de5-a5aa-04d2bc305ef1
-Ÿ	cpp:S1172"XRemove the unused parameter "player", make it unnamed, or declare it "[[maybe_unused]]".(â¾Ï¯ıÿÿÿÿ8ÅıÂì1J$6aa4ca32-0345-4477-9a0c-64baf7da16ac
-…	cpp:S1238m">Pass expensive to copy object "message" by reference to const.(ƒíÌ±üÿÿÿÿ8À¡ùì1J$0958b7c9-1ff6-4713-8625-0cb76dac2d27
+v	cpp:S1135"4Complete the task associated to this "TODO" comment.(Ö‡¯Ô8üÂì1J$dbc3bef6-df91-479b-bb3e-a3f80b3e36e7
+{	cpp:S1117]":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(¥È»u8ã¬®•ì1J$445aee9a-78e2-4641-b445-fd8791e36e28
+	cpp:S1117e":declaration shadows a field of 'AbstractGame<BOARD, MOVE>'(Ñ†ÒÖûÿÿÿÿ8ã¬®•ì1J$86e118d9-f4ae-46ad-b10a-eb1aa2255388
+p	cpp:S5817")This function should be declared "const".(â¾Ï¯ıÿÿÿÿ8åã³•ì1J$bd4d399b-0629-498f-82fc-6c3d6379d263
+Ÿ	cpp:S1172"XRemove the unused parameter "player", make it unnamed, or declare it "[[maybe_unused]]".(â¾Ï¯ıÿÿÿÿ8ÅıÂì1J$059e552e-1b7c-473a-a51e-2a6617f644f1
+…	cpp:S1238p">Pass expensive to copy object "message" by reference to const.(ƒíÌ±üÿÿÿÿ8Œ­®•ì1J$44ac5076-0419-4d46-91ed-72d2fd61ae4f

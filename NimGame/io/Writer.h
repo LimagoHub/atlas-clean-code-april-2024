@@ -9,6 +9,6 @@ namespace atlas::io {
     class Writer {
     public:
         virtual ~Writer() = default;
-        virtual void write(std::string message) const = 0;
+        virtual void write(std::string &message) const = 0;
     };
 }

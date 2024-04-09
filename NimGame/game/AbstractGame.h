@@ -15,6 +15,7 @@ namespace atlas::games {
     public:
         explicit AbstractGame(io::Writer &writer) : writer(writer) {}
 
+
         void play() override {
             while(! isGameOver()) {
                 playRound();
@@ -25,7 +26,7 @@ namespace atlas::games {
             players.push_back(player);
         }
 
-        void removePlayer(PLAYER * player) {
+        void removePlayer(PLAYER * player){
             // TODO implement
         }
     private:
@@ -54,7 +55,9 @@ namespace atlas::games {
 
             do {
                 move = currentPlayer->doTurn(board);
-            } while(playersTurnIsInvalid());
+            }while(playersTurnIsInvalid());
+
+
         }
         void terminateTurn( ) {// Integration
             updateScene();
@@ -64,21 +67,21 @@ namespace atlas::games {
 
         void printGameOvermessageIfGameIsOver() { // Operation
 
-            if(isGameOver()){
-                write( currentPlayer->getName() + " hat verloren");
-            }
+            if(isGameOver()) write( currentPlayer->getName() + " hat verloren");
+
         }
 
         bool playersTurnIsInvalid() {
-            if(isTurnValid()) return false ;
+            if(isTurnValid())  return false ;
+
             write("ungueltiger zug");
 
             return true;
         }
 
 
-        void setCurrentPlayer(PLAYER *currentPlayer) {
-            AbstractGame::currentPlayer = currentPlayer;
+        void setCurrentPlayer(PLAYER *currentPlayer_) {
+            AbstractGame::currentPlayer = currentPlayer_;
         }
 
 

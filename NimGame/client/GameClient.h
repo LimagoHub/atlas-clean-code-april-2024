@@ -5,7 +5,7 @@
 #pragma once
 #include "../game/Game.h"
 
-using namespace atlas::games;
+
 
 namespace atlas::clients {
     class GameClient {

@@ -10,7 +10,9 @@ namespace atlas::games {
 
     public:
         virtual ~Game() = default;
-
+        /**
+         * Spielt das Spiel
+         */
         virtual void play() = 0;
 
     };

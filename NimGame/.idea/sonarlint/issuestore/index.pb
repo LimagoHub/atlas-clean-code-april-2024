@@ -27,3 +27,7 @@ C
 game/AbstractGame.h,9\7\97aaa4316356fb5e77254a38ced28f23de8638a8
 D
 game/player/Player.h,1\f\1f2ee97a0d60c523af0bcfbdaf84905bc3d2b41c
+L
+game/player/AbstractPlayer.h,6\e\6edeae169bba27fa950cfaaf9908da55b02f3374
+K
+game/nim/player/OmaPlayer.h,d\c\dc67690e2141f8b1414dd9d1222672a6fd77af81

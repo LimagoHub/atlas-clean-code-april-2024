@@ -1,3 +1,2 @@
 
-„	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(ºµŞÿùÿÿÿÿ8ƒ®ì1J$873db4c8-2f8e-40f7-9bd0-9d8757e0f73d
-~	cpp:S5408"7A "constexpr" variable should not be declared "inline".(ºµŞÿùÿÿÿÿ8ıÔ®ì1J$ebcd9dec-f3a2-4e67-8d18-afbe02f3a8e8
+	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(ô€°8ƒ®ì1J$4a376b9c-2c84-4d55-b408-e7198fe1e84d

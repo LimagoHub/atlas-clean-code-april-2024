@@ -11,7 +11,7 @@ namespace atlas::io {
     public:
         ~ConsoleWriter() override = default;
 
-        void write(std::string message) const override {
+        void write(std::string &message) const override {
             std::cout << message << std::endl;
         }
     };

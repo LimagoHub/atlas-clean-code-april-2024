@@ -12,6 +12,6 @@ namespace atlas::games::player {
 
 
     public:
-        AbstractNimGamePlayer(const std::string &name) : AbstractPlayer(name) {}
+        explicit  AbstractNimGamePlayer(const std::string &name) : AbstractPlayer(name) {}
     };
 }
