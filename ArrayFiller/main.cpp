@@ -14,7 +14,7 @@ int main() {
 
     auto feld = std::make_shared<std::array<int,collection_size>>();
 
-
+    std::cout << "Running..." << std::endl;
     start_ = std::chrono::high_resolution_clock::now();
     for (int  i = 0; i < collection_size ; ++i) {
         feld->at(i) = rand();
@@ -22,7 +22,7 @@ int main() {
 
     end_ = std::chrono::high_resolution_clock::now();
 
-    std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(end_-start_).count() << std::endl;
+    std::cout << "Duration: " << std::chrono::duration_cast<std::chrono::milliseconds>(end_-start_).count() << std::endl;
 
 
     return 0;
