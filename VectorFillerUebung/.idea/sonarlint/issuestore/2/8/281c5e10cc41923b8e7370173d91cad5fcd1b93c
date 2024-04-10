@@ -1,0 +1,3 @@
+
+À	cpp:S5951"„Remove the top level "const" qualifier from the return type of this function. The current return type is "const unsigned long long".(…ô’öJ$bcaa9482-9b5d-4379-a6c9-f8310bcb8307
+o	cpp:S3471#"/Drop the "override" specifier; it is redundant.(ÁôÛðùÿÿÿÿJ$260b0e43-f489-4ac2-89b5-d6a3febd22f5
