@@ -8,11 +8,11 @@
 
 
 int main() {
-    constexpr size_t collection_size = INT32_MAX / 4;
+    const size_t collection_size = INT32_MAX / 4;
     std::chrono::high_resolution_clock::time_point start_;
     std::chrono::high_resolution_clock::time_point end_;
 
-    auto feld = std::make_shared<std::array<int,collection_size>>();
+    auto feld = std::make_shared<std::vector<int>>(collection_size);
 
     std::cout << "Running..." << std::endl;
     start_ = std::chrono::high_resolution_clock::now();
