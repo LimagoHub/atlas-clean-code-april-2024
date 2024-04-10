@@ -3,15 +3,16 @@
 #include <chrono>
 #include <vector>
 #include <memory>
-
+#include <algorithm>
+#include <execution>
 
 
 int main() {
-    constexpr int collection_size = INT32_MAX / 4;
+    constexpr size_t collection_size = INT32_MAX / 4;
     std::chrono::high_resolution_clock::time_point start_;
     std::chrono::high_resolution_clock::time_point end_;
 
-    auto feld = std::make_shared<std::vector<int>>(collection_size);
+    auto feld = std::make_shared<std::array<int,collection_size>>();
 
 
     start_ = std::chrono::high_resolution_clock::now();
