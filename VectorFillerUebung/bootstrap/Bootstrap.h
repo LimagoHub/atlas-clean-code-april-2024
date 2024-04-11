@@ -22,6 +22,8 @@ namespace atlas::bootstrap {
             auto generatorBuilder = createGeneratorBuilder();
             atlas::collection::VectorFactoryBuilder<int>::setThreadCount(threadCount);
             atlas::collection::VectorFactoryBuilder<int>::setBenchmark(true);
+            atlas::collection::VectorFactoryBuilder<int>::setLogger(true);
+            atlas::collection::VectorFactoryBuilder<int>::setSecure(true);
             auto vectorFiller = atlas::collection::VectorFactoryBuilder<int>::createWithGeneratorBuilder(std::move(generatorBuilder));
             auto client = createClient(std::move(vectorFiller));
 
@@ -46,7 +48,7 @@ namespace atlas::bootstrap {
 
         auto startApplication()-> void const {
             const size_t availableProcessors = std::thread::hardware_concurrency();
-            for (int threadCount = 1; threadCount <= availableProcessors + 1; ++threadCount) {
+            for (int threadCount = 0; threadCount <= availableProcessors + 1; ++threadCount) {
                 std::cout << "Starte Messung mit " << threadCount << " Threads" << std::endl;
                 create(threadCount);
             }

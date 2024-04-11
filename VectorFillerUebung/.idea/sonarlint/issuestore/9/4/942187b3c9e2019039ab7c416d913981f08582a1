@@ -1,5 +1,6 @@
 
-Œ	cpp:S1117"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àıËĞûÿÿÿÿ8ÈĞÀÀì1J$b89712f3-82cf-41a1-a0db-e119699ac661
-Œ	cpp:S1117'"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àÙ¦ßüÿÿÿÿ8Ú¶ëáì1J$dfd7e778-d60d-4aec-a610-d20cddd8b8e8
-v	cpp:S52740"/moving a temporary object prevents copy elision(ÎÔâ”ûÿÿÿÿ8ç§ƒâì1J$a3dd3152-a49a-487f-b615-4065d55e2ee7
-	cpp:S1301."KReplace this "switch" statement by "if" statements to increase readability.(ú¥¸Ú8üáâì1J$9c167291-c880-4a87-b33b-5bfcf0009232
+Œ	cpp:S1117/"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àÙ¦ßüÿÿÿÿ8Ú¶ëáì1J$1940789a-a02e-48a3-bf4e-1ba7730cd7b7
+Œ	cpp:S1117'"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àıËĞûÿÿÿÿ8ÈĞÀÀì1J$333624c9-2c92-460d-9b96-3e73e767bf46
+‡	cpp:S11177"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(óÜ8ôğÿçì1J$8ad27c81-e71e-4dae-9b86-d482b6457dcd
+‡	cpp:S1117?"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(ÂˆÄµ8°Ûèì1J$089c36b4-5826-4da2-9b6f-d6696a81390c
+v	cpp:S5274K"/moving a temporary object prevents copy elision(ÎÔâ”ûÿÿÿÿ8äÈĞèì1J$99f35088-92f0-491e-992b-a4406a61421f

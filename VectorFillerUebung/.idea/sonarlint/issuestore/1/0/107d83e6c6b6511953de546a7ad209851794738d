@@ -1,3 +1,3 @@
 
-Έ	cpp:S5951/"vRemove the top level "const" qualifier from the return type of this function. The current return type is "const void".(όΫ±8®Τξαμ1J$2eb7b37b-124a-4694-b2f4-77ed478ff994
-k	cpp:S5817/")This function should be declared "const".(όΫ±8‹°σαμ1J$eeffe541-7c53-4173-b7d0-87f7ddb2124a
+Έ	cpp:S59511"vRemove the top level "const" qualifier from the return type of this function. The current return type is "const void".(όΫ±8®Τξαμ1J$9220ed7d-e499-4dc6-b7a9-bbd93b022e5a
+k	cpp:S58171")This function should be declared "const".(όΫ±8‹°σαμ1J$c2c15db2-c2c8-42e6-8cd3-9c735b592604

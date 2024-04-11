@@ -35,3 +35,13 @@ L
 generator/GeneratorBuilder.h,e\5\e5f6f5e3caa21a94ff8f4619594fbb8599aa8ce4
 d
 4collection/impl/parallel/VectorFactoryParallelImpl.h,6\3\637c3200e92f1d4b7145129ad149d3ee1ae70e95
+i
+9collection/impl/decorators/VectorFactoryLoggerDecorator.h,d\5\d55ebc629a04fd8a12456f6fe547e4b400a1a94c
+i
+9collection/impl/decorators/VectorFactorySecureDecorator.h,7\b\7b30b50e8b98e119a3f346c8fda57056632f8172
+`
+0collection/impl/parallel/VectorFactoryAutoImpl.h,b\a\baa34fdc81302ed9acffa074d56a9ffb36b74c0c
+]
+-generator/impl/generic/GenericGeneratorImpl.h,e\3\e34b80e0ec919fe2ddef105c6335525882811a43
+E
+time/impl/decorator.h,d\7\d7c7b77d583e36d7d23668283ac88a69df06c1f7
