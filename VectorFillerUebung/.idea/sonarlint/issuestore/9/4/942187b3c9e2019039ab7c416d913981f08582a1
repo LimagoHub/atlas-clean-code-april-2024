@@ -1,2 +1,5 @@
 
-Œ	cpp:S1117"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àıËĞûÿÿÿÿ8ÈĞÀÀì1J$f424bf58-e1f7-4dc6-9573-1eabec8f9727
+Œ	cpp:S1117"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àıËĞûÿÿÿÿ8ÈĞÀÀì1J$b89712f3-82cf-41a1-a0db-e119699ac661
+Œ	cpp:S1117'"Edeclaration shadows a static data member of 'VectorFactoryBuilder<T>'(àÙ¦ßüÿÿÿÿ8Ú¶ëáì1J$dfd7e778-d60d-4aec-a610-d20cddd8b8e8
+v	cpp:S52740"/moving a temporary object prevents copy elision(ÎÔâ”ûÿÿÿÿ8ç§ƒâì1J$a3dd3152-a49a-487f-b615-4065d55e2ee7
+	cpp:S1301."KReplace this "switch" statement by "if" statements to increase readability.(ú¥¸Ú8üáâì1J$9c167291-c880-4a87-b33b-5bfcf0009232

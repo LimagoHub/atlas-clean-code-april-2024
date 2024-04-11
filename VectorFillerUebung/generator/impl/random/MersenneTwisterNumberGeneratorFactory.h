@@ -7,7 +7,7 @@
 #include "../../GeneratorBuilder.h"
 #include "MersenneTwisterNumberGenerator.h"
 
-namespace generators {
+namespace atlas::generator {
     class MersenneTwisterNumberGeneratorFactory : public GeneratorBuilder<int> {
     public:
 
@@ -15,7 +15,7 @@ namespace generators {
         ~MersenneTwisterNumberGeneratorFactory() override = default;
         [[nodiscard]] auto create() const -> std::unique_ptr<Generator<int>> override
         {
-            return std::make_unique<mersenne_twister_number_generator>();
+            return std::make_unique<MersenneTwisterNumberGenerator>();
         }
     };
 }
