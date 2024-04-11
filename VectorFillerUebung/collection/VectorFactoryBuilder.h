@@ -31,6 +31,8 @@ namespace atlas::collection {
         static VECTOR_FACTORY createWithGenerator(GENERATOR generator) {
             VECTOR_FACTORY result;
             result = std::make_unique<VECTOR_FACTORY_SEQUENCIAL>(std::move(generator));
+
+
             if(benchmark) result = std::make_unique<VECTOR_FACTORY_BENCHMARK>(std::move(result));
             return result;
         }

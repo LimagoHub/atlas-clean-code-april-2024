@@ -8,14 +8,12 @@
 #include <thread>
 #include "../client/impl/ClientImpl.h";
 #include "../generator/impl/random/MersenneTwisterNumberGenerator.h"
-#include "../collection/impl/sequential/VectorFactorySequentialImpl.h"
-#include "../collection/impl/decorators//VectorFactoryBenchmarkDecorator.h"
+#include "../collection/VectorFactoryBuilder.h"
 
 namespace atlas::bootstrap {
     class Bootstrap {
         using VECTOR_FACTORY = std::unique_ptr<atlas::collection::VectorFactory<int>>;
-        using VECTOR_FACTORY_SEQUENCIAL = atlas::collection::VectorFactorySequentialImpl<int>;
-        using VECTOR_FACTORY_BENCHMARK = atlas::collection::VectorFactoryBenchmarkDecorator<int>;
+
         using GENERATOR = std::unique_ptr<generator::Generator<int>>;
         using CLIENT = std::unique_ptr<atlas::client::Client>;
 
@@ -25,12 +23,6 @@ namespace atlas::bootstrap {
             return generator;
         }
 
-        static VECTOR_FACTORY createVectorFactory(GENERATOR generator) {
-            VECTOR_FACTORY result;
-            result = std::make_unique<VECTOR_FACTORY_SEQUENCIAL>(std::move(generator));
-            result = std::make_unique<VECTOR_FACTORY_BENCHMARK>(std::move(result));
-            return result;
-        }
 
         static CLIENT createClient(VECTOR_FACTORY factory) {
             CLIENT client = std::make_unique<atlas::client::VectorClientImpl>(std::move(factory));
@@ -43,7 +35,9 @@ namespace atlas::bootstrap {
         void startApplication() {
 
             auto generator = createGenerator();
-            auto vectorFiller = createVectorFactory(std::move(generator));
+
+            atlas::collection::VectorFactoryBuilder<int>::setBenchmark(true);
+            auto vectorFiller = atlas::collection::VectorFactoryBuilder<int>::createWithGenerator(std::move(generator));
             auto client = createClient(std::move(vectorFiller));
 
             client->doSomethingWithLargeVector();
